@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="it.toscana.estar.lunghezza.LunghezzaParolaController">
+   <top>
+      <Label text="Primo Programma: calcolo lunghezza parola" textFill="#1013b2" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+   </top>
+   <center>
+      <VBox spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="5.0">
+               <children>
+                  <Label text="Parola:" />
+                  <TextField fx:id="txtParola" onAction="#doLunghezza" />
+                  <Button fx:id="btnLunghezza" mnemonicParsing="false" onAction="#doLunghezza" text="Lunghezza" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <TextArea fx:id="txtAreaResult" editable="false" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
