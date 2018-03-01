@@ -10,10 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="it.toscana.estar.lunghezza.LunghezzaParolaController">
+<BorderPane style="-fx-background-color: #101010;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.toscana.estar.lunghezza.LunghezzaParolaController">
    <top>
-      <Label text="Primo Programma: calcolo lunghezza parola" textFill="#1013b2" BorderPane.alignment="CENTER">
+      <Label text="Primo Programma: calcolo lunghezza parola" textFill="#f2df0d" BorderPane.alignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>
@@ -26,11 +25,11 @@
       </Label>
    </top>
    <center>
-      <VBox spacing="5.0" BorderPane.alignment="CENTER">
+      <VBox spacing="5.0" style="-fx-background-color: #101010;" BorderPane.alignment="CENTER">
          <children>
             <HBox spacing="5.0">
                <children>
-                  <Label text="Parola:" />
+                  <Label text="Parola:" textFill="WHITE" />
                   <TextField fx:id="txtParola" onAction="#doLunghezza" />
                   <Button fx:id="btnLunghezza" mnemonicParsing="false" onAction="#doLunghezza" text="Lunghezza" />
                </children>
